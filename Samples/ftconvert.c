@@ -32,7 +32,7 @@ Sam Skuce - v.1.0.2 - February.19.2004 - added some comments just before the dec
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "..\atidaq\ftconfig.h"
+#include "../ATIDAQ/ftconfig.h"
 
 int main(int argc, char *argv[]) {
 	char *calfilepath;      // name of calibration file
