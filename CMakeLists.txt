@@ -124,6 +124,7 @@ target_link_libraries(calinfo atidaq)
 
 install(
 	TARGETS	calinfo
+	EXPORT atidaq
 	COMPONENT programs
 	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
 	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
@@ -135,6 +136,7 @@ target_link_libraries(ftconvert atidaq)
 
 install(
 	TARGETS	ftconvert
+	EXPORT atidaq
 	COMPONENT programs
 	ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
 	LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
