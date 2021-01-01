@@ -65,6 +65,7 @@ endif()
 set_target_properties(
 	atidaq
 	PROPERTIES
+	EXPORT_NAME ATIDAQ
 	POSITION_INDEPENDENT_CODE ON
 	VERSION ${VERSION}
 )
@@ -169,7 +170,7 @@ install(
 install(
 	EXPORT atidaq
 	DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/atidaq-${VERSION}
-	NAMESPACE atidaq::
+	NAMESPACE ATIDAQ::
 	FILE atidaq-export.cmake
 	COMPONENT development
 )
